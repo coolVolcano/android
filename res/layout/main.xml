@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+	
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello"
+        android:textSize="12sp"/>
+
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/seBlue"
+        android:textSize="12sp"
+        android:text="@string/load_requirements" />
+    
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:isScrollContainer="true">
+		
+        <TableRow
+            android:id="@+id/rowLoadRequirements1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+			
+            <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/total_load" 
+		        android:textSize="12sp"/>
+
+            <EditText
+                android:id="@+id/txtPower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="numberDecimal" 
+                android:maxLength="6"
+                android:focusable="true"
+                android:textSize="12sp"
+                android:background="@drawable/se_edittext"
+                android:layout_marginRight="80dp">
+            </EditText>
+		</TableRow>
+		<TableRow
+		    android:id="@+id/rowLoadRequirements2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+		    <RadioGroup
+   				android:layout_width="fill_parent"
+   				android:layout_height="wrap_content"
+   				android:orientation="horizontal"
+   				android:layout_span="3">
+	            <RadioButton
+	                android:id="@+id/radioWatts"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/watts" 
+	                android:textSize="12sp"
+	                android:textColor="@color/seTextColor"
+	                android:button="@drawable/se_radiobutton"/>
+	            <RadioButton
+	               android:id="@+id/radioVA"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:text="@string/va" 
+	               android:textSize="12sp"
+	               android:textColor="@color/seTextColor"
+	               android:button="@drawable/se_radiobutton"/>
+				<RadioButton
+	               android:id="@+id/radioKva"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:text="@string/kVa" 
+	               android:textSize="12sp"
+	               android:textColor="@color/seTextColor"
+	               android:button="@drawable/se_radiobutton"/>
+			</RadioGroup>
+		    
+		</TableRow>
+		
+		<TableRow
+            android:id="@+id/rowUserPreferences6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+		    
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="12sp"
+		        android:text="@string/user_site_voltage" />
+			
+            <Spinner
+    			android:id="@+id/spinVoltage_in"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:background="@drawable/se_spinner"
+    			android:entries="@array/voltage_in_options"
+    			android:layout_span="2"/>
+			
+        </TableRow>
+		
+		<TableRow
+            android:id="@+id/rowLoadRequirements3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+			
+            <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:text="@string/operating_voltages" 
+		        android:textSize="12sp"/>
+            
+            <Spinner
+    			android:id="@+id/spinVoltage"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:background="@drawable/se_spinner"
+    			android:layout_span="2"/>
+            
+            
+		</TableRow>
+		
+		<TableRow
+            android:id="@+id/rowLoadRequirements33"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp" >
+            
+		 </TableRow>
+		
+		<TableRow
+            android:id="@+id/rowLoadRequirements32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:text="" 
+		        android:textSize="12sp"/>
+			<ImageButton
+			        android:id="@+id/btnNext"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:src="@drawable/next_arrow"
+			        android:contentDescription="@string/next_step"
+			        android:background="@drawable/se_button"
+			        android:layout_marginLeft="120dp"
+			        android:layout_marginRight="25dp"
+			        android:layout_weight="1"
+			        />
+		</TableRow>
+		
+		
+	</TableLayout>
+		
+        
+</LinearLayout>

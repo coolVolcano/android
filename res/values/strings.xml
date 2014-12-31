@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Please set your preferences below, then click the "Show Solution" button to view a list of of solutions.</string>
+    <string name="app_name">UPS Selector</string>
+    <string name="load_requirements">Load Requirements</string>
+	<string name="total_load">Total Load:</string>
+	<string name="watts">Watts</string>
+	<string name="va">VA</string>
+	<string name="kVa">kVA</string>
+	<string name="operating_voltages">Operating Voltages:</string>
+	<string name="user_preferences">User Preferences</string>
+	<string name="extra_power">Extra Power for future\nexpansion:</string>
+	<string name="extra_power_land">Extra Power for future expansion:</string>
+	<string name="desired_runtime">Desired run time\nduring power fail:</string>
+	<string name="desired_runtime_land">Desired run time during power fail:</string>
+	<string name="hours">Hours</string>
+	<string name="hours_land">Hours<![CDATA[#x20#x20#x20#x20#x20#x20#x20#x20]]></string>
+	<string name="minutes">Minutes</string>
+	<string name="require_rackmountable">Do you require a\nRackmountable UPS?</string>
+	<string name="require_rackmountable_land">Do you require a Rackmountable UPS?</string>
+	<string name="require_redundant">Do you require a\nRedundant solution?</string>
+	<string name="require_redundant_land">Do you require a Redundant solution?</string>
+	<string name="user_site_voltage">User Site Voltage:</string>
+	<string name="yes">Yes</string>
+	<string name="no">No</string>
+	<string name="show_solution">Show Solution</string>
+	<string name="price">Price*:</string>
+	<string name="runtime">Runtime:</string>
+	<string name="part_number">Part Number:</string>
+	<string name="features">Features</string>
+	<string name="ups_image">UPS Image</string>
+	<string name="no_ups_found">No standard UPS could be found to meet your requirements. Please contact APC for a custom configured solution at 888-477-6714.</string>
+	<string name="missing_power">Missing Necessary Fields: Power Requirement</string>
+	<string name="missing_voltage">Missing Necessary Fields: Voltage</string>
+	<string name="site_and_voltages_not_compatible">Site and Operating voltages are not compatible</string>
+	<string name="button_call">Call Sales</string>
+	<string name="find_reseller">Find Reseller</string>
+	<string name="add_to_cart">Add to Cart</string>
+	<string name="buy_now">Buy Now</string>
+	<string name="progress_dialog_title">Schneider Electric</string>
+	<string name="progress_dialog_label">Searching UPS! Please wait...</string>
+	<string name="next_step">Next Step</string>
+	<string name="apc_by_schneider_electric">APC by Schneider Electric</string>
+	
+	<string-array name="operating_voltages_options">
+	    <item>Choose...</item>
+        <item>100V</item>
+        <item>120V</item>
+        <item>200V</item>
+        <item>208V</item>
+        <item>230V</item>
+        <item>200V 3Phase</item>
+        <item>208V 3Phase</item>
+        <item>400V 3Phase</item>
+        <item>480V 3Phase</item>
+        <item>600V 3Phase</item>
+    </string-array>
+    
+	<string-array name="voltage_in_options">
+        <item>Choose...</item>
+        <item>North America - 120V system (&amp; 208V,480V)</item>
+        <item>International - 230V system (&amp; 400V)</item>
+        <item>Japan - 100V system (&amp; 200V)</item>
+    </string-array>
+    
+	<string-array name="runtimeHours_options">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>16</item>
+        <item>20</item>
+        <item>24</item>
+        <item>30</item>
+        <item>36</item>
+        <item>48</item>
+    </string-array>
+    
+	<string-array name="runtimeMins_options">
+        <item>00</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+    </string-array>
+    
+    <style name="seStyle" parent="android:Theme">
+        <item name="android:windowBackground">@android:color/white</item>
+        <!--<item name="android:windowTitleBackgroundStyle">@style/seTitle</item>-->
+        <item name="android:spinnerStyle">?android:attr/dropDownSpinnerStyle</item>
+        <!--<item name="android:spinnerDropDownItemStyle">@style/seText</item>-->
+        <item name="android:textViewStyle">@style/seText</item>
+        <item name="android:windowTitleStyle">@style/seTitle</item>
+    </style>
+    <style name="seTitle">  
+        <item name="android:background">#4FA600</item>
+    </style>  
+    <style name="seText">  
+        <item name="android:textColor">#626469</item>
+        <item name="android:textSize">13sp</item>
+    </style>  
+    <color name="seTextColor">#626469</color>
+    <color name="seBlue">#336699</color>
+    <color name="seColor">#4FA600</color>
+    <color name="seWhite">#FFFFFF</color>
+    <color name="seRed">#FF0000</color>
+</resources>

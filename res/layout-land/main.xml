@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello"/>
+
+    
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="@string/load_requirements" />
+    
+     <ScrollView
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content" >
+        	
+	    <TableLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" 
+	        android:isScrollContainer="true">
+			
+	            <TableRow
+	                android:id="@+id/rowLoadRequirements1"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content" >
+				
+		            <TextView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="@string/total_load" />
+		
+		            <EditText
+		                android:id="@+id/txtPower"
+		                android:layout_width="60dp"
+		                android:layout_height="wrap_content"
+		                android:ems="2"
+		                android:inputType="numberDecimal" 
+		                android:maxLength="6">
+		            </EditText>
+		            
+		            <RadioGroup
+			   			android:layout_width="fill_parent"
+			   			android:layout_height="wrap_content"
+			   			android:orientation="horizontal"
+			   			android:layout_span="6">
+			            <RadioButton
+			                android:id="@+id/radioWatts"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:text="@string/watts" 
+			                android:textColor="@color/seTextColor"/>
+			            <RadioButton
+			               android:id="@+id/radioVA"
+			               android:layout_width="wrap_content"
+			               android:layout_height="wrap_content"
+			               android:text="@string/va" 
+			               android:textColor="@color/seTextColor"/>
+						<RadioButton
+			               android:id="@+id/radioKva"
+			               android:layout_width="wrap_content"
+			               android:layout_height="wrap_content"
+			               android:text="@string/kVa" 
+			               android:textColor="@color/seTextColor"/>
+					</RadioGroup>
+			</TableRow>
+			
+	        <TableRow
+	            android:id="@+id/rowLoadRequirements3"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content" >
+				
+	            <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/operating_voltages" />
+				
+	            <Spinner
+	    			android:id="@+id/spinVoltage"
+	    			android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			android:layout_span="7"/>
+			</TableRow>
+			
+	        <View 
+	            android:layout_width="fill_parent"  
+	            android:layout_height="1dp"  
+	   			android:background="?android:attr/listDivider" />
+	        
+	        <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textStyle="bold"
+		        android:text="@string/user_preferences" />
+	        
+	        <TableRow
+	            android:id="@+id/rowUserPreferences1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+				
+	            <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="match_parent"
+			        android:text="@string/extra_power_land" />
+				
+	            <Spinner
+	    			android:id="@+id/spinPMargin"
+	    			android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			android:layout_span="7"/>
+			</TableRow>
+			
+	        <TableRow
+	            android:id="@+id/rowUserPreferences2"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content" >
+				
+	            <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="match_parent"
+			        android:text="@string/desired_runtime_land" />
+				
+	            <Spinner
+	    			android:id="@+id/spinRuntimeHours"
+	    			android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"/>
+	            
+	            <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textStyle="bold"
+			        android:text="       " />
+	            
+	             <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textStyle="bold"
+			        android:text="@string/hours" />
+	             
+	             <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textStyle="bold"
+			        android:text="       " />
+	             
+	             <Spinner
+	    			android:id="@+id/spinRuntimeMins"
+	    			android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"/>
+	             
+	             <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textStyle="bold"
+			        android:text="       " />
+	            
+	             <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textStyle="bold"
+			        android:text="@string/minutes" />
+	             
+	        </TableRow>
+			
+	        <TableRow
+	            android:id="@+id/rowUserPreferences4"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content" >
+				
+	            <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="match_parent"
+			        android:text="@string/require_rackmountable_land" />
+	            
+	            <RadioGroup
+		   			android:layout_width="fill_parent"
+		   			android:layout_height="wrap_content"
+		   			android:orientation="horizontal"
+		   			android:layout_span="7">
+		            <RadioButton
+		                android:id="@+id/radioRackmountable_yes"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/yes" 
+		                android:textColor="@color/seTextColor"/>
+		            <RadioButton
+		               android:id="@+id/radioRackmountable_no"
+		               android:layout_width="wrap_content"
+		               android:layout_height="wrap_content"
+		               android:text="@string/no" 
+		               android:textColor="@color/seTextColor"/>
+				</RadioGroup>
+	        </TableRow>
+	        
+	        <TableRow
+	            android:id="@+id/rowUserPreferences5"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content" >
+				
+	            <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="match_parent"
+			        android:text="@string/require_redundant_land" />
+	            
+	            <RadioGroup
+		   			android:layout_width="fill_parent"
+		   			android:layout_height="wrap_content"
+		   			android:orientation="horizontal"
+		   			android:layout_span="7">
+		            <RadioButton
+		                android:id="@+id/radioRedundant_yes"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/yes" 
+		                android:textColor="@color/seTextColor"/>
+		            <RadioButton
+		               android:id="@+id/radioRedundant_no"
+		               android:layout_width="wrap_content"
+		               android:layout_height="wrap_content"
+		               android:text="@string/no" 
+		               android:textColor="@color/seTextColor"/>
+				</RadioGroup>
+	        </TableRow>
+	        
+	        <TableRow
+	            android:id="@+id/rowUserPreferences6"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content" >
+				
+	            <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="match_parent"
+			        android:text="@string/user_site_voltage" />
+	            
+	            <Spinner
+	    			android:id="@+id/spinVoltage_in"
+	    			android:layout_width="fill_parent"
+	    			android:layout_height="wrap_content"
+	    			android:layout_span="7"/>
+	        </TableRow>
+	        
+	        <TableRow
+	            android:id="@+id/rowButton"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content">
+				
+	            <Button
+			        android:id="@+id/btnSearch"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/show_solution" 
+			        android:layout_span="8"/>
+	        </TableRow>
+	        
+	        
+	    </TableLayout>
+    
+    
+    </ScrollView>
+    
+</LinearLayout>

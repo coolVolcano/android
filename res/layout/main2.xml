@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:isScrollContainer="true">
+        
+        <View 
+            android:layout_width="fill_parent"  
+            android:layout_height="1dp"  
+   			android:background="?android:attr/listDivider"/>
+        
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textStyle="bold"
+	        android:textSize="12sp"
+		    android:textColor="@color/seBlue"
+	        android:text="@string/user_preferences" />
+	        
+        <TableRow
+            android:id="@+id/rowUserPreferences1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+			
+            <TextView
+		        android:layout_width="fill_parent"
+		        android:layout_height="match_parent"
+		        android:text="@string/extra_power" 
+		        android:textSize="12sp"/>
+			
+            <Spinner
+    			android:id="@+id/spinPMargin"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_span="2"
+    			android:background="@drawable/se_spinner"
+    			android:layout_marginRight="40dp"/>
+		</TableRow>
+			
+        <TableRow
+            android:id="@+id/rowUserPreferences2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+			
+            <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:text="@string/desired_runtime" 
+		        android:textSize="12sp"/>
+			
+            <Spinner
+    			android:id="@+id/spinRuntimeHours"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:background="@drawable/se_spinner"/>
+            
+             <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textStyle="bold"
+		        android:text="@string/hours" 
+		        android:textSize="12sp"/>
+            
+        </TableRow>
+	        
+         <TableRow
+            android:id="@+id/rowUserPreferences3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:textSize="12sp"/> 
+             
+            <Spinner
+    			android:id="@+id/spinRuntimeMins"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:background="@drawable/se_spinner"/>
+            
+            <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textStyle="bold"
+		        android:text="@string/minutes" 
+		        android:textSize="12sp"/>
+		</TableRow>
+			
+        <TableRow
+            android:id="@+id/rowUserPreferences4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+			
+            <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:text="@string/require_rackmountable" 
+		        android:textSize="12sp"/>
+            
+            <RadioGroup
+	   			android:layout_width="fill_parent"
+	   			android:layout_height="wrap_content"
+	   			android:orientation="horizontal"
+	   			android:layout_span="2">
+	            <RadioButton
+	                android:id="@+id/radioRackmountable_yes"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/yes" 
+	                android:textSize="12sp"
+	                android:textColor="@color/seTextColor"
+	                android:button="@drawable/se_radiobutton"/>
+	            <RadioButton
+	               android:id="@+id/radioRackmountable_no"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:text="@string/no" 
+	               android:textSize="12sp"
+	               android:textColor="@color/seTextColor"
+	               android:button="@drawable/se_radiobutton"/>
+			</RadioGroup>
+        </TableRow>
+	        
+        <TableRow
+            android:id="@+id/rowUserPreferences5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+			
+            <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:text="@string/require_redundant" 
+		        android:textSize="12sp"/>
+            
+            <RadioGroup
+	   			android:layout_width="fill_parent"
+	   			android:layout_height="wrap_content"
+	   			android:orientation="horizontal"
+	   			android:layout_span="2">
+	            <RadioButton
+	                android:id="@+id/radioRedundant_yes"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/yes" 
+	                android:textSize="12sp"
+	                android:textColor="@color/seTextColor"
+	                android:button="@drawable/se_radiobutton"/>
+	            <RadioButton
+	               android:id="@+id/radioRedundant_no"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:text="@string/no" 
+	               android:textSize="12sp"
+	               android:textColor="@color/seTextColor"
+	               android:button="@drawable/se_radiobutton"/>
+			</RadioGroup>
+        </TableRow>
+	        
+        <TableRow
+            android:id="@+id/rowButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+			
+            <Button
+		        android:id="@+id/btnSearch"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/show_solution" 
+		        android:textSize="12sp"
+		        android:textColor="@color/seTextColor"
+		        android:background="@drawable/se_button"
+		        android:layout_weight="1"/>
+        </TableRow>
+	        
+	        
+    </TableLayout>
+
+</LinearLayout>
